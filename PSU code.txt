@@ -1,0 +1,25 @@
+START
+
+FUNCTION grade_score(score):
+    IF score >= 70 AND score <= 100:
+        RETURN "A"
+    ELSE IF score >= 60 AND score < 70:
+        RETURN "B"
+    ELSE IF score >= 50 AND score < 60:
+        RETURN "C"
+    ELSE IF score >= 45 AND score < 50:
+        RETURN "D"
+    ELSE IF score >= 40 AND score < 45:
+        RETURN "E"
+    ELSE IF score >= 0 AND score < 40:
+        RETURN "F"
+    ELSE:
+        RETURN "Invalid Score"
+
+END FUNCTION
+
+INPUT score
+CALL grade_score(score)
+DISPLAY grade
+
+END
